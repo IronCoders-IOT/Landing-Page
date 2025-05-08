@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -33,13 +34,31 @@
         </div>
     </nav>
 
-    <!-- Contenido principal (placeholder) -->
-    <div style="height: 100vh; padding-top: 100px;">
+    <!-- Header / Hero Section -->
+    <header id="home" class="hero">
         <div class="container">
-            <h1>AquaConecta</h1>
-            <p>Navegación implementada</p>
+            <div class="hero-content">
+                <h1>Conectando agua con quienes más la necesitan</h1>
+                <p>AquaConecta es una plataforma inteligente con tecnología IoT que revoluciona el acceso al agua
+                    potable, conectando proveedores con comunidades sin suministro constante, permitiendo monitorear en
+                    tiempo real la calidad y cantidad del agua disponible.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary">Descargar App</a>
+                    <a href="#contact" class="btn btn-secondary">Más Información</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/istockphoto-1320578130-612x612.jpg" alt="AquaConecta App en uso">
+            </div>
         </div>
-    </div>
+        <div class="wave-divider">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1"
+                    d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,213.3C672,224,768,224,864,202.7C960,181,1056,139,1152,128C1248,117,1344,139,1392,149.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+    </header>
 
     <script src="js/script.js"></script>
 </body>
