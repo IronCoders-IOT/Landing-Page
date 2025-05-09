@@ -49,3 +49,89 @@
 .feature-card p {
     color: var(--text-light);
 }
+
+/* Help Section */
+.help-section {
+    padding: 80px 0;
+    background-color: var(--light-bg);
+    position: relative;
+    scroll-margin-top: 80px;
+}
+
+.help-card {
+    display: flex;
+    background-color: var(--white);
+    margin-bottom: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.help-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.help-card.reversed {
+    flex-direction: row-reverse;
+}
+
+.help-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 40px;
+    font-size: 3rem;
+    min-width: 150px;
+}
+
+.help-content {
+    padding: 30px;
+    flex: 1;
+}
+
+.help-content h3 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.help-content p {
+    color: var(--text-light);
+    margin-bottom: 20px;
+}
+
+.help-content .btn {
+    margin-top: 20px;
+}
+
+.benefits-list {
+    margin: 25px 0;
+}
+
+.benefits-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.benefits-list i {
+    color: var(--secondary-color);
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+/* Help section responsive */
+@media (max-width: 768px) {
+    .help-card, .help-card.reversed {
+        flex-direction: column;
+    }
+    
+    .help-icon {
+        width: 100%;
+        padding: 30px;
+    }
+}

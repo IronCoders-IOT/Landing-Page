@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Animación al hacer scroll
     const animateOnScroll = function() {
-        const elements = document.querySelectorAll('.feature-card');
+        const elements = document.querySelectorAll('.feature-card, .help-card, .help-content');
         
         elements.forEach(element => {
             const elementPosition = element.getBoundingClientRect().top;
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
     };
     
     // Añadir clase para animar los elementos
-    document.querySelectorAll('.feature-card').forEach(el => {
+    document.querySelectorAll('.feature-card, .help-card, .help-content').forEach(el => {
         el.classList.add('animate-on-scroll');
     });
     
