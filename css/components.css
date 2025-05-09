@@ -73,3 +73,77 @@
 input.error, select.error, textarea.error {
     border-color: #e74c3c;
 }
+
+/* Notifications */
+.notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 25px;
+    border-radius: var(--border-radius);
+    color: var(--white);
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 9999;
+}
+
+.notification.success {
+    background-color: var(--secondary-color);
+}
+
+.notification.error {
+    background-color: #e74c3c;
+}
+
+.notification.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* App buttons para la sección de descargar app en contacto */
+.app-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.app-btn {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: var(--dark-bg);
+    color: var(--white);
+    border-radius: 8px;
+    transition: var(--transition);
+}
+
+.app-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.app-btn i {
+    font-size: 1.6rem;
+    margin-right: 8px;
+}
+
+.app-btn span {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.app-btn small {
+    font-size: 0.7rem;
+    opacity: 0.8;
+}
+
+@media (max-width: 576px) {
+    .app-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
