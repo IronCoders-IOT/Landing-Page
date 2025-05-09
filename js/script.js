@@ -24,6 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Animación suave para enlaces de navegación
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
+            if (this.id === 'langSwitch') return; // No prevenir el comportamiento por defecto para el botón de idioma
+            
             e.preventDefault();
             
             const targetId = this.getAttribute('href');
@@ -231,4 +233,85 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }, 100);
+    
+    // ===== FUNCIONALIDAD DE CAMBIO DE IDIOMA =====
+    
+    // Función para cambiar el idioma
+    function switchLanguage() {
+        // Si el idioma actual es español, cambiar a inglés y viceversa
+        const currentLang = localStorage.getItem('language') || 'es';
+        const newLang = currentLang === 'es' ? 'en' : 'es';
+        
+        // Guardar la preferencia de idioma
+        localStorage.setItem('language', newLang);
+        
+        // Actualizar el texto del botón de idioma
+        document.getElementById('langSwitch').textContent = newLang === 'es' ? 'EN' : 'ES';
+        
+        // Actualizar todos los textos
+        updateTexts(newLang);
+    }
+    
+    // Función para actualizar todos los textos según el idioma
+    function updateTexts(lang) {
+        // Obtener todos los elementos con atributo data-i18n
+        const elements = document.querySelectorAll('[data-i18n]');
+        
+        elements.forEach(element => {
+            const key = element.getAttribute('data-i18n');
+            
+            // Si existe una traducción para este elemento
+            if (translations[lang] && translations[lang][key]) {
+                // Si es un elemento de entrada o un textarea
+                if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                    if (element.getAttribute('placeholder')) {
+                        element.placeholder = translations[lang][key];
+                    } else {
+                        element.value = translations[lang][key];
+                    }
+                } 
+                // Si es un elemento select option
+                else if (element.tagName === 'OPTION') {
+                    element.text = translations[lang][key];
+                }
+                // Si es un elemento con atributo value (como botones)
+                else if (element.hasAttribute('value')) {
+                    element.value = translations[lang][key];
+                } 
+                // Para todos los demás elementos
+                else {
+                    element.textContent = translations[lang][key];
+                }
+            }
+        });
+        
+        // También actualizar el título de la página
+        if (translations[lang] && translations[lang]['site_title']) {
+            document.title = translations[lang]['site_title'];
+        }
+        
+        // Actualizar el atributo lang del HTML
+        document.documentElement.lang = lang;
+    }
+    
+    // Inicializar el idioma al cargar la página
+    // Obtener el idioma guardado o usar español por defecto
+    const currentLang = localStorage.getItem('language') || 'es';
+    
+    // Actualizar el texto del botón de idioma
+    const langSwitch = document.getElementById('langSwitch');
+    if (langSwitch) {
+        langSwitch.textContent = currentLang === 'es' ? 'EN' : 'ES';
+        
+        // Agregar evento al botón de cambio de idioma
+        langSwitch.addEventListener('click', function(e) {
+            e.preventDefault();
+            switchLanguage();
+        });
+    }
+    
+    // Si el idioma guardado es inglés, actualizar los textos
+    if (currentLang === 'en') {
+        updateTexts('en');
+    }
 });
