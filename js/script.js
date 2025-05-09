@@ -50,4 +50,27 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+    
+    // Animación al hacer scroll
+    const animateOnScroll = function() {
+        const elements = document.querySelectorAll('.feature-card');
+        
+        elements.forEach(element => {
+            const elementPosition = element.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+            
+            if (elementPosition < windowHeight - 50) {
+                element.classList.add('animate');
+            }
+        });
+    };
+    
+    // Añadir clase para animar los elementos
+    document.querySelectorAll('.feature-card').forEach(el => {
+        el.classList.add('animate-on-scroll');
+    });
+    
+    window.addEventListener('scroll', animateOnScroll);
+    // Ejecutar una vez al cargar la página
+    animateOnScroll();
 });
