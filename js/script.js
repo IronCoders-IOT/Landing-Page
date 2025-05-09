@@ -51,28 +51,33 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Animación al hacer scroll
-    const animateOnScroll = function() {
-        const elements = document.querySelectorAll('.feature-card, .help-card, .help-content, .problem-solution-wrapper, .problem-box, .solution-box, .service-card, .service-cta, .contact-form, .contact-info');
-        
-        elements.forEach(element => {
-            const elementPosition = element.getBoundingClientRect().top;
-            const windowHeight = window.innerHeight;
-            
-            if (elementPosition < windowHeight - 50) {
-                element.classList.add('animate');
-            }
-        });
+    // Animación al hacer scroll con IntersectionObserver
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.15
     };
     
-    // Añadir clase para animar los elementos
-    document.querySelectorAll('.feature-card, .help-card, .help-content, .problem-solution-wrapper, .problem-box, .solution-box, .service-card, .service-cta, .contact-form, .contact-info').forEach(el => {
-        el.classList.add('animate-on-scroll');
-    });
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate');
+                // Opcional: dejar de observar después de animar
+                // observer.unobserve(entry.target);
+            } else {
+                // Opcional: quitar la animación cuando ya no está en viewport
+                // entry.target.classList.remove('animate');
+            }
+        });
+    }, observerOptions);
     
-    window.addEventListener('scroll', animateOnScroll);
-    // Ejecutar una vez al cargar la página
-    animateOnScroll();
+    // Añadir clase para animar los elementos y observarlos
+    const animatedElements = document.querySelectorAll('.feature-card, .help-card, .help-content, .problem-solution-wrapper, .problem-box, .solution-box, .service-card, .service-cta, .contact-form, .contact-info, .footer-column');
+    
+    animatedElements.forEach(el => {
+        el.classList.add('animate-on-scroll');
+        observer.observe(el);
+    });
     
     // Validación del formulario de contacto
     const contactForm = document.getElementById('contact-form');
@@ -191,4 +196,39 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 300); // Pequeño retraso para asegurar que la página está completamente cargada
         }
     }
+    
+    // Animación para elementos al cargar la página
+    window.addEventListener('load', function() {
+        // Animación para el hero (aparece gradualmente)
+        const heroContent = document.querySelector('.hero-content');
+        const heroImage = document.querySelector('.hero-image');
+        
+        if (heroContent) {
+            setTimeout(() => {
+                heroContent.style.opacity = '1';
+                heroContent.style.transform = 'translateY(0)';
+            }, 200);
+        }
+        
+        if (heroImage) {
+            setTimeout(() => {
+                heroImage.style.opacity = '1';
+                heroImage.style.transform = 'translateY(0)';
+            }, 500);
+        }
+    });
+    
+    // Inicializar elementos visibles en la carga
+    setTimeout(function() {
+        const elementsInView = document.querySelectorAll('.animate-on-scroll');
+        
+        elementsInView.forEach(element => {
+            const rect = element.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+            
+            if (rect.top < windowHeight - 50) {
+                element.classList.add('animate');
+            }
+        });
+    }, 100);
 });
