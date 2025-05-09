@@ -149,6 +149,20 @@
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
+/* Hero animations */
+.hero-content {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.hero-image {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    transition-delay: 0.3s;
+}
+
 /* Hero responsive */
 @media (max-width: 992px) {
     .hero .container {
