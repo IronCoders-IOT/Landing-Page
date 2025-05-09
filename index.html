@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AquaConecta - Conectando proveedores de agua con comunidades</title>
+    <title data-i18n="site_title">AquaConecta - Conectando proveedores de agua con comunidades</title>
     
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/components.css">
@@ -23,12 +23,13 @@
                 <h1>Aqua<span>Conecta</span></h1>
             </div>
             <ul class="nav-links">
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#features">Características</a></li>
-                <li><a href="#help">A quienes ayudamos</a></li>
-                <li><a href="#problem">Problemática</a></li>
-                <li><a href="#services">Servicios</a></li>
-                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#home" data-i18n="nav_home">Inicio</a></li>
+                <li><a href="#features" data-i18n="nav_features">Características</a></li>
+                <li><a href="#help" data-i18n="nav_help">A quienes ayudamos</a></li>
+                <li><a href="#problem" data-i18n="nav_problem">Problemática</a></li>
+                <li><a href="#services" data-i18n="nav_services">Servicios</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Contacto</a></li>
+                <li><a href="#" id="langSwitch" class="lang-switch">EN</a></li>
             </ul>
             <div class="mobile-menu">
                 <i class="fas fa-bars"></i>
@@ -40,13 +41,13 @@
     <header id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Conectando agua con quienes más la necesitan</h1>
-                <p>AquaConecta es una plataforma inteligente con tecnología IoT que revoluciona el acceso al agua
+                <h1 data-i18n="hero_title">Conectando agua con quienes más la necesitan</h1>
+                <p data-i18n="hero_description">AquaConecta es una plataforma inteligente con tecnología IoT que revoluciona el acceso al agua
                     potable, conectando proveedores con comunidades sin suministro constante, permitiendo monitorear en
                     tiempo real la calidad y cantidad del agua disponible.</p>
                 <div class="cta-buttons">
-                    <a href="#" class="btn btn-primary">Descargar App</a>
-                    <a href="#contact" class="btn btn-secondary">Más Información</a>
+                    <a href="#" class="btn btn-primary" data-i18n="hero_cta_download">Descargar App</a>
+                    <a href="#contact" class="btn btn-secondary" data-i18n="hero_cta_more">Más Información</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -66,8 +67,8 @@
     <section id="features" class="features">
         <div class="container">
             <div class="section-header">
-                <h2>¿Por qué elegir AquaConecta?</h2>
-                <p>Con AquaConecta, los usuarios pueden monitorear la calidad y cantidad de agua en sus hogares,
+                <h2 data-i18n="features_title">¿Por qué elegir AquaConecta?</h2>
+                <p data-i18n="features_description">Con AquaConecta, los usuarios pueden monitorear la calidad y cantidad de agua en sus hogares,
                     mientras que los proveedores optimizan sus operaciones y mejoran la trazabilidad en la distribución.
                 </p>
             </div>
@@ -76,32 +77,32 @@
                     <div class="feature-icon">
                         <i class="fas fa-tint"></i>
                     </div>
-                    <h3>Monitoreo en tiempo real</h3>
-                    <p>Supervisa la cantidad y calidad del agua disponible en tu hogar desde cualquier dispositivo con
+                    <h3 data-i18n="feature1_title">Monitoreo en tiempo real</h3>
+                    <p data-i18n="feature1_description">Supervisa la cantidad y calidad del agua disponible en tu hogar desde cualquier dispositivo con
                         sensores IoT instalados en tus tanques.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-bell"></i>
                     </div>
-                    <h3>Alertas inteligentes</h3>
-                    <p>Recibe notificaciones automáticas cuando el nivel de agua está bajo o si la calidad se ve
+                    <h3 data-i18n="feature2_title">Alertas inteligentes</h3>
+                    <p data-i18n="feature2_description">Recibe notificaciones automáticas cuando el nivel de agua está bajo o si la calidad se ve
                         comprometida.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-map-marked-alt"></i>
                     </div>
-                    <h3>Optimización de rutas</h3>
-                    <p>Los proveedores pueden coordinar eficientemente las entregas, priorizar zonas críticas y
+                    <h3 data-i18n="feature3_title">Optimización de rutas</h3>
+                    <p data-i18n="feature3_description">Los proveedores pueden coordinar eficientemente las entregas, priorizar zonas críticas y
                         optimizar sus recorridos con datos en tiempo real.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3>Gestión de inventario</h3>
-                    <p>Control preciso del volumen disponible y planificación de la distribución basada en datos reales
+                    <h3 data-i18n="feature4_title">Gestión de inventario</h3>
+                    <p data-i18n="feature4_description">Control preciso del volumen disponible y planificación de la distribución basada en datos reales
                         para una gestión más equitativa.</p>
                 </div>
             </div>
@@ -112,8 +113,8 @@
     <section id="help" class="help-section">
         <div class="container">
             <div class="section-header">
-                <h2>A quienes queremos ayudar</h2>
-                <p>Nuestra plataforma beneficia tanto a usuarios finales como a proveedores de agua</p>
+                <h2 data-i18n="help_title">A quienes queremos ayudar</h2>
+                <p data-i18n="help_description">Nuestra plataforma beneficia tanto a usuarios finales como a proveedores de agua</p>
             </div>
 
             <!-- Para usuarios -->
@@ -122,20 +123,20 @@
                     <i class="fas fa-users"></i>
                 </div>
                 <div class="help-content">
-                    <h3>Para los usuarios</h3>
-                    <p>Toma el control de tu suministro de agua y mejora tu calidad de vida en zonas donde solo el 13.3%
+                    <h3 data-i18n="help_users_title">Para los usuarios</h3>
+                    <p data-i18n="help_users_description">Toma el control de tu suministro de agua y mejora tu calidad de vida en zonas donde solo el 13.3%
                         de los hogares cuentan con suministro continuo.</p>
                     <ul class="benefits-list">
-                        <li><i class="fas fa-check-circle"></i> Monitoreo en tiempo real de la cantidad y calidad del
-                            agua en tus tanques</li>
-                        <li><i class="fas fa-check-circle"></i> Alertas automáticas cuando el agua está por agotarse
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="help_users_benefit1">Monitoreo en tiempo real de la cantidad y calidad del
+                            agua en tus tanques</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="help_users_benefit2">Alertas automáticas cuando el agua está por agotarse</span>
                         </li>
-                        <li><i class="fas fa-check-circle"></i> Programación y seguimiento de entregas de agua mediante
-                            camiones cisterna</li>
-                        <li><i class="fas fa-check-circle"></i> Información sobre la calidad del agua y prevención de
-                            riesgos sanitarios</li>
-                        <li><i class="fas fa-check-circle"></i> Planificación de consumo diario o semanal para un uso
-                            más eficiente</li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="help_users_benefit3">Programación y seguimiento de entregas de agua mediante
+                            camiones cisterna</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="help_users_benefit4">Información sobre la calidad del agua y prevención de
+                            riesgos sanitarios</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="help_users_benefit5">Planificación de consumo diario o semanal para un uso
+                            más eficiente</span></li>
                     </ul>
                 </div>
             </div>
@@ -146,20 +147,20 @@
                     <i class="fas fa-truck-loading"></i>
                 </div>
                 <div class="help-content">
-                    <h3>Para los proveedores</h3>
-                    <p>Optimiza tus operaciones y mejora la trazabilidad en la distribución de agua con nuestras
+                    <h3 data-i18n="help_providers_title">Para los proveedores</h3>
+                    <p data-i18n="help_providers_description">Optimiza tus operaciones y mejora la trazabilidad en la distribución de agua con nuestras
                         herramientas especializadas basadas en IoT.</p>
                     <ul class="benefits-list">
-                        <li><i class="fas fa-check-circle"></i> Planificación inteligente de rutas de distribución
-                            basada en datos reales</li>
-                        <li><i class="fas fa-check-circle"></i> Monitoreo remoto del estado de tanques en múltiples
-                            hogares</li>
-                        <li><i class="fas fa-check-circle"></i> Priorización automática de zonas críticas con bajo
-                            suministro</li>
-                        <li><i class="fas fa-check-circle"></i> Panel de gestión con datos en tiempo real para toma de
-                            decisiones</li>
-                        <li><i class="fas fa-check-circle"></i> Disponible en dos planes: básico (hasta 500 hogares) y
-                            avanzado (hasta 1,000 hogares)</li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="help_providers_benefit1">Planificación inteligente de rutas de distribución
+                            basada en datos reales</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="help_providers_benefit2">Monitoreo remoto del estado de tanques en múltiples
+                            hogares</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="help_providers_benefit3">Priorización automática de zonas críticas con bajo
+                            suministro</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="help_providers_benefit4">Panel de gestión con datos en tiempo real para toma de
+                            decisiones</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="help_providers_benefit5">Disponible en dos planes: básico (hasta 500 hogares) y
+                            avanzado (hasta 1,000 hogares)</span></li>
                     </ul>
                 </div>
             </div>
@@ -170,40 +171,40 @@
     <section id="problem" class="problem-solution">
         <div class="container">
             <div class="section-header">
-                <h2>La problemática del agua</h2>
-                <p>En regiones como Ica y Chincha, miles de familias enfrentan una grave crisis de acceso al agua
+                <h2 data-i18n="problem_title">La problemática del agua</h2>
+                <p data-i18n="problem_description">En regiones como Ica y Chincha, miles de familias enfrentan una grave crisis de acceso al agua
                     potable</p>
             </div>
             <div class="problem-solution-wrapper">
                 <div class="problem-box">
-                    <h3>El desafío actual</h3>
+                    <h3 data-i18n="problem_challenge_title">El desafío actual</h3>
                     <ul class="problem-list">
-                        <li><i class="fas fa-exclamation-circle"></i> Solo el 13.3% de los hogares cuenta con suministro
-                            continuo durante 24 horas</li>
-                        <li><i class="fas fa-exclamation-circle"></i> Falta de trazabilidad y control por vivienda en la
-                            distribución</li>
-                        <li><i class="fas fa-exclamation-circle"></i> Riesgos en la calidad del agua distribuida por
-                            cisternas</li>
-                        <li><i class="fas fa-exclamation-circle"></i> Dependencia de métodos manuales sin datos en
-                            tiempo real</li>
-                        <li><i class="fas fa-exclamation-circle"></i> Problemas sanitarios por almacenamiento inadecuado
+                        <li><i class="fas fa-exclamation-circle"></i> <span data-i18n="problem_challenge1">Solo el 13.3% de los hogares cuenta con suministro
+                            continuo durante 24 horas</span></li>
+                        <li><i class="fas fa-exclamation-circle"></i> <span data-i18n="problem_challenge2">Falta de trazabilidad y control por vivienda en la
+                            distribución</span></li>
+                        <li><i class="fas fa-exclamation-circle"></i> <span data-i18n="problem_challenge3">Riesgos en la calidad del agua distribuida por
+                            cisternas</span></li>
+                        <li><i class="fas fa-exclamation-circle"></i> <span data-i18n="problem_challenge4">Dependencia de métodos manuales sin datos en
+                            tiempo real</span></li>
+                        <li><i class="fas fa-exclamation-circle"></i> <span data-i18n="problem_challenge5">Problemas sanitarios por almacenamiento inadecuado</span>
                         </li>
                     </ul>
                 </div>
                 <div class="solution-box">
-                    <h3>Nuestra solución</h3>
-                    <p>AquaConecta utiliza sensores IoT instalados en tanques domésticos para:</p>
+                    <h3 data-i18n="solution_title">Nuestra solución</h3>
+                    <p data-i18n="solution_description">AquaConecta utiliza sensores IoT instalados en tanques domésticos para:</p>
                     <ul class="solution-list">
-                        <li><i class="fas fa-check-circle"></i> Monitorear en tiempo real niveles y calidad del agua
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="solution1">Monitorear en tiempo real niveles y calidad del agua</span>
                         </li>
-                        <li><i class="fas fa-check-circle"></i> Transmitir datos a una plataforma accesible vía web y
-                            móvil</li>
-                        <li><i class="fas fa-check-circle"></i> Permitir a usuarios visualizar su consumo y recibir
-                            alertas</li>
-                        <li><i class="fas fa-check-circle"></i> Facilitar a proveedores optimizar rutas y priorizar
-                            zonas críticas</li>
-                        <li><i class="fas fa-check-circle"></i> Reducir riesgos sanitarios y mejorar la distribución
-                            equitativa</li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="solution2">Transmitir datos a una plataforma accesible vía web y
+                            móvil</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="solution3">Permitir a usuarios visualizar su consumo y recibir
+                            alertas</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="solution4">Facilitar a proveedores optimizar rutas y priorizar
+                            zonas críticas</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="solution5">Reducir riesgos sanitarios y mejorar la distribución
+                            equitativa</span></li>
                     </ul>
                 </div>
             </div>
@@ -214,8 +215,8 @@
     <section id="services" class="services">
         <div class="container">
             <div class="section-header">
-                <h2>Nuestros Servicios</h2>
-                <p>Conoce los planes y servicios que ofrecemos para garantizar tu acceso al agua</p>
+                <h2 data-i18n="services_title">Nuestros Servicios</h2>
+                <p data-i18n="services_description">Conoce los planes y servicios que ofrecemos para garantizar tu acceso al agua</p>
             </div>
 
             <div class="services-wrapper">
@@ -225,33 +226,33 @@
                         <div class="service-icon">
                             <i class="fas fa-tint"></i>
                         </div>
-                        <h3>Plan Agua Segura</h3>
+                        <h3 data-i18n="service_main_title">Plan Agua Segura</h3>
                         <p class="service-price">S/ 258</p>
-                        <p class="service-price-info">por cada sensor</p>
+                        <p class="service-price-info" data-i18n="service_price_info">por cada sensor</p>
                     </div>
                     <div class="service-content">
-                        <p>Sabes cuánta agua tienes y si está limpia, todo desde tu celular.</p>
+                        <p data-i18n="service_main_description">Sabes cuánta agua tienes y si está limpia, todo desde tu celular.</p>
                         <ul class="service-features">
-                            <li><i class="fas fa-check-circle"></i> El sensor</li>
-                            <li><i class="fas fa-check-circle"></i> Instalación con técnico</li>
-                            <li><i class="fas fa-check-circle"></i> 1 mes de uso del sistema</li>
-                            <li><i class="fas fa-sync-alt"></i> Luego solo pagas S/ 50 al mes por sensor activo</li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="service_feature1">El sensor</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="service_feature2">Instalación con técnico</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="service_feature3">1 mes de uso del sistema</span></li>
+                            <li><i class="fas fa-sync-alt"></i> <span data-i18n="service_feature4">Luego solo pagas S/ 50 al mes por sensor activo</span></li>
                         </ul>
                         <div class="service-benefits">
                             <div class="benefit-item">
                                 <i class="fas fa-check"></i>
-                                <span>Ver nivel y calidad del agua</span>
+                                <span data-i18n="service_benefit1">Ver nivel y calidad del agua</span>
                             </div>
                             <div class="benefit-item">
                                 <i class="fas fa-check"></i>
-                                <span>Recibir alertas</span>
+                                <span data-i18n="service_benefit2">Recibir alertas</span>
                             </div>
                             <div class="benefit-item">
                                 <i class="fas fa-check"></i>
-                                <span>Acceso desde el celular</span>
+                                <span data-i18n="service_benefit3">Acceso desde el celular</span>
                             </div>
                         </div>
-                        <a href="#contact" class="btn btn-primary">Solicitar Plan</a>
+                        <a href="#contact" class="btn btn-primary" data-i18n="service_cta">Solicitar Plan</a>
                     </div>
                 </div>
 
@@ -261,36 +262,36 @@
                         <div class="service-icon">
                             <i class="fas fa-wrench"></i>
                         </div>
-                        <h3>Mantenimiento</h3>
-                        <p>Servicio técnico especializado para garantizar el correcto funcionamiento de tus sensores.
+                        <h3 data-i18n="service_maintenance_title">Mantenimiento</h3>
+                        <p data-i18n="service_maintenance_description">Servicio técnico especializado para garantizar el correcto funcionamiento de tus sensores.
                         </p>
-                        <a href="#contact" class="btn btn-secondary">Consultar</a>
+                        <a href="#contact" class="btn btn-secondary" data-i18n="service_consult">Consultar</a>
                     </div>
 
                     <div class="service-card">
                         <div class="service-icon">
                             <i class="fas fa-building"></i>
                         </div>
-                        <h3>Plan Empresarial</h3>
-                        <p>Soluciones personalizadas para negocios, industrias y edificios multifamiliares.</p>
-                        <a href="#contact" class="btn btn-secondary">Más información</a>
+                        <h3 data-i18n="service_business_title">Plan Empresarial</h3>
+                        <p data-i18n="service_business_description">Soluciones personalizadas para negocios, industrias y edificios multifamiliares.</p>
+                        <a href="#contact" class="btn btn-secondary" data-i18n="service_more_info">Más información</a>
                     </div>
 
                     <div class="service-card">
                         <div class="service-icon">
                             <i class="fas fa-chart-line"></i>
                         </div>
-                        <h3>Asesoría</h3>
-                        <p>Aprende a optimizar tu consumo de agua y reducir costos con nuestros especialistas.</p>
-                        <a href="#contact" class="btn btn-secondary">Agendar cita</a>
+                        <h3 data-i18n="service_advice_title">Asesoría</h3>
+                        <p data-i18n="service_advice_description">Aprende a optimizar tu consumo de agua y reducir costos con nuestros especialistas.</p>
+                        <a href="#contact" class="btn btn-secondary" data-i18n="service_schedule">Agendar cita</a>
                     </div>
                 </div>
             </div>
 
             <div class="service-cta">
-                <h3>¿Necesitas más información?</h3>
-                <p>Nuestro equipo está listo para ayudarte a elegir el plan que mejor se adapte a tus necesidades.</p>
-                <a href="#contact" class="btn btn-primary">Contacta con nosotros</a>
+                <h3 data-i18n="service_info_title">¿Necesitas más información?</h3>
+                <p data-i18n="service_info_description">Nuestro equipo está listo para ayudarte a elegir el plan que mejor se adapte a tus necesidades.</p>
+                <a href="#contact" class="btn btn-primary" data-i18n="service_contact_us">Contacta con nosotros</a>
             </div>
         </div>
     </section>
@@ -299,53 +300,53 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
-                <h2>Contacta con nosotros</h2>
-                <p>¿Tienes preguntas o sugerencias? Estamos aquí para ayudarte</p>
+                <h2 data-i18n="contact_title">Contacta con nosotros</h2>
+                <p data-i18n="contact_description">¿Tienes preguntas o sugerencias? Estamos aquí para ayudarte</p>
             </div>
             <div class="contact-wrapper">
                 <form id="contact-form" class="contact-form">
                     <div class="form-group">
-                        <label for="name">Nombre</label>
+                        <label for="name" data-i18n="contact_name">Nombre</label>
                         <input type="text" id="name" name="name" required>
                     </div>
                     <div class="form-group">
-                        <label for="email">Correo electrónico</label>
+                        <label for="email" data-i18n="contact_email">Correo electrónico</label>
                         <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-group">
-                        <label for="subject">Asunto</label>
+                        <label for="subject" data-i18n="contact_subject">Asunto</label>
                         <select id="subject" name="subject">
-                            <option value="info">Información general</option>
-                            <option value="support">Soporte técnico</option>
-                            <option value="partnership">Colaboración</option>
-                            <option value="other">Otro</option>
+                            <option value="info" data-i18n="contact_subject_info">Información general</option>
+                            <option value="support" data-i18n="contact_subject_support">Soporte técnico</option>
+                            <option value="partnership" data-i18n="contact_subject_partnership">Colaboración</option>
+                            <option value="other" data-i18n="contact_subject_other">Otro</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="message">Mensaje</label>
+                        <label for="message" data-i18n="contact_message">Mensaje</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                    <button type="submit" class="btn btn-primary" data-i18n="contact_send">Enviar mensaje</button>
                 </form>
                 <div class="contact-info">
                     <div class="info-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
-                            <h4>Dirección</h4>
-                            <p>Av. Tecnológica 1234, Ciudad Innovación</p>
+                            <h4 data-i18n="contact_address_title">Dirección</h4>
+                            <p data-i18n="contact_address">Av. Tecnológica 1234, Ciudad Innovación</p>
                         </div>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-phone"></i>
                         <div>
-                            <h4>Teléfono</h4>
+                            <h4 data-i18n="contact_phone_title">Teléfono</h4>
                             <p>+52 123 456 7890</p>
                         </div>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-envelope"></i>
                         <div>
-                            <h4>Email</h4>
+                            <h4 data-i18n="contact_email_title">Email</h4>
                             <p>info@aquaconecta.com</p>
                         </div>
                     </div>
@@ -358,20 +359,20 @@
 
                     <!-- Descarga la App (con diseño mejorado) -->
                     <div class="download-contact">
-                        <h4>Descarga AquaConecta</h4>
-                        <p>Disponible para iOS y Android</p>
+                        <h4 data-i18n="contact_download_title">Descarga AquaConecta</h4>
+                        <p data-i18n="contact_download_description">Disponible para iOS y Android</p>
                         <div class="app-buttons">
                             <a href="#" class="app-btn">
                                 <i class="fab fa-apple"></i>
                                 <span>
-                                    <small>Descarga en</small>
+                                    <small data-i18n="download_on">Descarga en</small>
                                     App Store
                                 </span>
                             </a>
                             <a href="#" class="app-btn">
                                 <i class="fab fa-google-play"></i>
                                 <span>
-                                    <small>Disponible en</small>
+                                    <small data-i18n="available_on">Disponible en</small>
                                     Google Play
                                 </span>
                             </a>
@@ -388,46 +389,47 @@
             <div class="footer-content">
                 <div class="footer-logo">
                     <h2>Aqua<span>Conecta</span></h2>
-                    <p>Conectando agua con quienes más la necesitan</p>
+                    <p data-i18n="footer_tagline">Conectando agua con quienes más la necesitan</p>
                 </div>
                 <div class="footer-links">
                     <div class="footer-column">
-                        <h3>Enlaces rápidos</h3>
+                        <h3 data-i18n="footer_quick_links">Enlaces rápidos</h3>
                         <ul>
-                            <li><a href="#home">Inicio</a></li>
-                            <li><a href="#features">Características</a></li>
-                            <li><a href="#help">A quienes ayudamos</a></li>
-                            <li><a href="#problem">Problemática</a></li>
-                            <li><a href="#services">Servicios</a></li>
-                            <li><a href="#contact">Contacto</a></li>
+                            <li><a href="#home" data-i18n="nav_home">Inicio</a></li>
+                            <li><a href="#features" data-i18n="nav_features">Características</a></li>
+                            <li><a href="#help" data-i18n="nav_help">A quienes ayudamos</a></li>
+                            <li><a href="#problem" data-i18n="nav_problem">Problemática</a></li>
+                            <li><a href="#services" data-i18n="nav_services">Servicios</a></li>
+                            <li><a href="#contact" data-i18n="nav_contact">Contacto</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
-                        <h3>Recursos</h3>
+                        <h3 data-i18n="footer_resources">Recursos</h3>
                         <ul>
-                            <li><a href="#">Preguntas frecuentes</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Tutoriales</a></li>
-                            <li><a href="#">Centro de ayuda</a></li>
+                            <li><a href="#" data-i18n="footer_faq">Preguntas frecuentes</a></li>
+                            <li><a href="#" data-i18n="footer_blog">Blog</a></li>
+                            <li><a href="#" data-i18n="footer_tutorials">Tutoriales</a></li>
+                            <li><a href="#" data-i18n="footer_help_center">Centro de ayuda</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
-                        <h3>Legal</h3>
+                        <h3 data-i18n="footer_legal">Legal</h3>
                         <ul>
-                            <li><a href="#">Términos de servicio</a></li>
-                            <li><a href="#">Política de privacidad</a></li>
-                            <li><a href="#">Cookies</a></li>
+                            <li><a href="#" data-i18n="footer_terms">Términos de servicio</a></li>
+                            <li><a href="#" data-i18n="footer_privacy">Política de privacidad</a></li>
+                            <li><a href="#" data-i18n="footer_cookies">Cookies</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 AquaConecta. Todos los derechos reservados.</p>
-                <p>Diseñado con <i class="fas fa-heart"></i> para comunidades con acceso limitado al agua</p>
+                <p data-i18n="footer_copyright">&copy; 2025 AquaConecta. Todos los derechos reservados.</p>
+                <p data-i18n="footer_tagline_extended">Diseñado con <i class="fas fa-heart"></i> para comunidades con acceso limitado al agua</p>
             </div>
         </div>
     </footer>
 
+    <script src="js/transalations.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
