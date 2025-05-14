@@ -3,7 +3,7 @@ const translations = {
     es: {
         // SEO y Título del sitio
         "site_title": "AquaConecta - Conectando proveedores de agua con comunidades",
-        
+
         // Navegación
         "nav_home": "Inicio",
         "nav_features": "Características",
@@ -11,13 +11,14 @@ const translations = {
         "nav_problem": "Problemática",
         "nav_services": "Servicios",
         "nav_contact": "Contacto",
-        
+        "nav_team": "Equipo",
+
         // Hero Section
         "hero_title": "Conectando agua con quienes más la necesitan",
         "hero_description": "AquaConecta es una plataforma inteligente con tecnología IoT que revoluciona el acceso al agua potable, conectando proveedores con comunidades sin suministro constante, permitiendo monitorear en tiempo real la calidad y cantidad del agua disponible.",
         "hero_cta_download": "Descargar App",
         "hero_cta_more": "Más Información",
-        
+
         // Features Section
         "features_title": "¿Por qué elegir AquaConecta?",
         "features_description": "Con AquaConecta, los usuarios pueden monitorear la calidad y cantidad de agua en sus hogares, mientras que los proveedores optimizan sus operaciones y mejoran la trazabilidad en la distribución.",
@@ -29,7 +30,7 @@ const translations = {
         "feature3_description": "Los proveedores pueden coordinar eficientemente las entregas, priorizar zonas críticas y optimizar sus recorridos con datos en tiempo real.",
         "feature4_title": "Gestión de inventario",
         "feature4_description": "Control preciso del volumen disponible y planificación de la distribución basada en datos reales para una gestión más equitativa.",
-        
+
         // Help Section
         "help_title": "A quienes queremos ayudar",
         "help_description": "Nuestra plataforma beneficia tanto a usuarios finales como a proveedores de agua",
@@ -47,7 +48,7 @@ const translations = {
         "help_providers_benefit3": "Priorización automática de zonas críticas con bajo suministro",
         "help_providers_benefit4": "Panel de gestión con datos en tiempo real para toma de decisiones",
         "help_providers_benefit5": "Disponible en dos planes: básico (hasta 500 hogares) y avanzado (hasta 1,000 hogares)",
-        
+
         // Problem Solution Section
         "problem_title": "La problemática del agua",
         "problem_description": "En regiones como Ica y Chincha, miles de familias enfrentan una grave crisis de acceso al agua potable",
@@ -64,7 +65,7 @@ const translations = {
         "solution3": "Permitir a usuarios visualizar su consumo y recibir alertas",
         "solution4": "Facilitar a proveedores optimizar rutas y priorizar zonas críticas",
         "solution5": "Reducir riesgos sanitarios y mejorar la distribución equitativa",
-        
+
         // Services Section
         "services_title": "Nuestros Servicios",
         "services_description": "Conoce los planes y servicios que ofrecemos para garantizar tu acceso al agua",
@@ -91,7 +92,7 @@ const translations = {
         "service_info_title": "¿Necesitas más información?",
         "service_info_description": "Nuestro equipo está listo para ayudarte a elegir el plan que mejor se adapte a tus necesidades.",
         "service_contact_us": "Contacta con nosotros",
-        
+
         // Contact Section
         "contact_title": "Contacta con nosotros",
         "contact_description": "¿Tienes preguntas o sugerencias? Estamos aquí para ayudarte",
@@ -112,7 +113,7 @@ const translations = {
         "contact_download_description": "Disponible para iOS y Android",
         "download_on": "Descarga en",
         "available_on": "Disponible en",
-        
+
         // Footer
         "footer_tagline": "Conectando agua con quienes más la necesitan",
         "footer_quick_links": "Enlaces rápidos",
@@ -126,13 +127,20 @@ const translations = {
         "footer_privacy": "Política de privacidad",
         "footer_cookies": "Cookies",
         "footer_copyright": "© 2025 AquaConecta. Todos los derechos reservados.",
-        "footer_tagline_extended": "Diseñado con ♥ para comunidades con acceso limitado al agua"
+        "footer_tagline_extended": "Diseñado con ♥ para comunidades con acceso limitado al agua",
+
+        // Team Section
+        "team_title": "Nuestro Equipo",
+        "team_description": "Conozca al equipo de ingenieros de software detrás de AquaConecta",
+        "team_about_us": "Sobre Nosotros",
+        "team_intro": "Somos un equipo de ingenieros de software comprometidos con la innovación y el desarrollo de soluciones tecnológicas que mejoren el acceso al agua potable.",
+
     },
-    
+
     en: {
         // SEO and Site Title
         "site_title": "AquaConecta - Connecting water providers with communities",
-        
+
         // Navigation
         "nav_home": "Home",
         "nav_features": "Features",
@@ -140,13 +148,14 @@ const translations = {
         "nav_problem": "Problem",
         "nav_services": "Services",
         "nav_contact": "Contact",
-        
+        "nav_team": "Team",
+
         // Hero Section
         "hero_title": "Connecting water with those who need it most",
         "hero_description": "AquaConecta is a smart platform with IoT technology that revolutionizes access to drinking water, connecting providers with communities without constant supply, allowing real-time monitoring of the quality and quantity of available water.",
         "hero_cta_download": "Download App",
         "hero_cta_more": "More Information",
-        
+
         // Features Section
         "features_title": "Why choose AquaConecta?",
         "features_description": "With AquaConecta, users can monitor the quality and quantity of water in their homes, while providers optimize their operations and improve traceability in distribution.",
@@ -158,7 +167,7 @@ const translations = {
         "feature3_description": "Providers can efficiently coordinate deliveries, prioritize critical areas, and optimize their routes with real-time data.",
         "feature4_title": "Inventory management",
         "feature4_description": "Precise control of available volume and planning of distribution based on real data for more equitable management.",
-        
+
         // Help Section
         "help_title": "Who We Want to Help",
         "help_description": "Our platform benefits both end users and water providers",
@@ -176,7 +185,7 @@ const translations = {
         "help_providers_benefit3": "Automatic prioritization of critical areas with low supply",
         "help_providers_benefit4": "Management dashboard with real-time data for decision making",
         "help_providers_benefit5": "Available in two plans: basic (up to 500 homes) and advanced (up to 1,000 homes)",
-        
+
         // Problem Solution Section
         "problem_title": "The water problem",
         "problem_description": "In regions like Ica and Chincha, thousands of families face a serious crisis in access to drinking water",
@@ -193,7 +202,7 @@ const translations = {
         "solution3": "Allow users to visualize their consumption and receive alerts",
         "solution4": "Help providers optimize routes and prioritize critical areas",
         "solution5": "Reduce health risks and improve equitable distribution",
-        
+
         // Services Section
         "services_title": "Our Services",
         "services_description": "Learn about the plans and services we offer to guarantee your access to water",
@@ -220,7 +229,7 @@ const translations = {
         "service_info_title": "Need more information?",
         "service_info_description": "Our team is ready to help you choose the plan that best suits your needs.",
         "service_contact_us": "Contact us",
-        
+
         // Contact Section
         "contact_title": "Contact us",
         "contact_description": "Have questions or suggestions? We're here to help",
@@ -241,7 +250,7 @@ const translations = {
         "contact_download_description": "Available for iOS and Android",
         "download_on": "Download on",
         "available_on": "Available on",
-        
+
         // Footer
         "footer_tagline": "Connecting water with those who need it most",
         "footer_quick_links": "Quick links",
@@ -255,6 +264,14 @@ const translations = {
         "footer_privacy": "Privacy policy",
         "footer_cookies": "Cookies",
         "footer_copyright": "© 2025 AquaConecta. All rights reserved.",
-        "footer_tagline_extended": "Designed with ♥ for communities with limited access to water"
+        "footer_tagline_extended": "Designed with ♥ for communities with limited access to water",
+
+        // Para inglés (dentro del objeto 'en')
+        "team_title": "Our Team",
+        "team_description": "Meet the software engineering team behind AquaConecta",
+        "team_about_us": "About Us",
+        "team_intro": "We are a team of software engineers committed to innovation and the development of technological solutions that improve access to drinking water.",
     }
+
+
 };
