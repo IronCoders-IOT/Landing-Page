@@ -523,12 +523,12 @@
 
 .team-video {
     flex: 1;
-    min-width: 300px;
+    min-width: 200px;
 }
 
 .team-video iframe {
     width: 100%;
-    height: 315px;
+    height: 415px;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
 }
