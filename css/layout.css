@@ -29,7 +29,7 @@
 
 .nav-links {
     display: flex;
-    gap: 25px;
+    gap: 20px;
 }
 
 .nav-links a {
@@ -88,7 +88,7 @@
 /* Hero Section */
 .hero {
     position: relative;
-    padding: 160px 0 120px;
+    padding: 150px 0; /* Aumentar de 160px 0 120px */
     background: linear-gradient(135deg, var(--primary-color) 0%, #3498db 100%);
     color: var(--white);
     overflow: hidden;

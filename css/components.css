@@ -158,7 +158,8 @@ input.error, select.error, textarea.error {
     background: linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
     padding: 10px 20px;
     border-radius: 5px;
-    margin-bottom: 40px;
+    margin: 0 auto 50px;
+    max-width: 800px; /* Reducir un poco el ancho */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -166,8 +167,7 @@ input.error, select.error, textarea.error {
     gap: 20px;
     backdrop-filter: blur(3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    max-width: 900px;
-    margin: 0 auto 50px;
+    max-width: 900px;;
     position: relative;
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
