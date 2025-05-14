@@ -147,3 +147,166 @@ input.error, select.error, textarea.error {
         gap: 15px;
     }
 }
+
+
+
+
+/* Estilos para el banner de descuento integrado en el hero section */
+
+/* Estilo para la cinta de descuento en la parte superior del hero */
+.discount-ribbon {
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 0 auto 50px;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.discount-badge {
+    background-color: var(--accent-color);
+    color: var(--dark-bg);
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 8px 12px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: rotate(-5deg);
+    animation: pulse 2s infinite;
+}
+
+.discount-text {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.countdown-container {
+    display: flex;
+    gap: 10px;
+}
+
+.countdown-unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+    padding: 5px 10px;
+    min-width: 50px;
+}
+
+.countdown-unit span:first-child {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: white;
+}
+
+.countdown-label {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.discount-expiry {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9rem;
+}
+
+/* Botón de aprovechar ahora */
+.btn-accent {
+    background-color: var(--accent-color);
+    color: var(--dark-bg);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-accent:hover {
+    background-color: #e0b50e;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Etiqueta de descuento para la imagen */
+.hero-image {
+    position: relative;
+}
+
+.discount-tag {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: var(--accent-color);
+    color: var(--dark-bg);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: float 6s ease-in-out infinite;
+    z-index: 2;
+    font-weight: 700;
+    line-height: 1;
+    transform: rotate(10deg);
+}
+
+.discount-tag span:first-child {
+    font-size: 1.3rem;
+}
+
+.discount-tag span:last-child {
+    font-size: 0.9rem;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+    .discount-ribbon {
+        flex-direction: column;
+        padding: 15px;
+        margin-bottom: 30px;
+    }
+    
+    .discount-badge, .discount-text {
+        text-align: center;
+    }
+    
+    /* Ajustar botones */
+    .cta-buttons {
+        flex-wrap: wrap;
+    }
+    
+    .cta-buttons .btn {
+        margin: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .countdown-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .discount-tag {
+        width: 50px;
+        height: 50px;
+        top: 10px;
+        right: 10px;
+        font-size: 0.9rem;
+    }
+    
+    .discount-tag span:first-child {
+        font-size: 1.1rem;
+    }
+}
