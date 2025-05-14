@@ -19,6 +19,9 @@
 </head>
 
 <body>
+
+
+
     <!-- Navegación -->
     <nav class="navbar">
         <div class="container">
@@ -34,6 +37,9 @@
                 <li><a href="#contact" data-i18n="nav_contact">Contacto</a></li>
                 <li><a href="#team" data-i18n="nav_team">Equipo</a></li>
                 <li><a href="#" id="langSwitch" class="lang-switch">EN</a></li>
+                <li><a href="https://aquaconecta-app.netlify.app/" class="btn-login" data-i18n="nav_login">Acceder</a>
+                </li>
+
             </ul>
             <div class="mobile-menu">
                 <i class="fas fa-bars"></i>
@@ -41,8 +47,31 @@
         </div>
     </nav>
 
-    <!-- Header / Hero Section -->
+    <!-- Modificación del Hero Section para incluir el banner de descuento -->
     <header id="home" class="hero">
+        <div class="discount-ribbon">
+            <div class="discount-badge">10% OFF</div>
+            <div class="discount-text">¡Descuento por lanzamiento oficial!</div>
+            <div class="countdown-container">
+                <div class="countdown-unit">
+                    <span id="countdown-days">57</span>
+                    <span class="countdown-label" data-i18n="countdown_days">Días</span>
+                </div>
+                <div class="countdown-unit">
+                    <span id="countdown-hours">10</span>
+                    <span class="countdown-label" data-i18n="countdown_hours">Horas</span>
+                </div>
+                <div class="countdown-unit">
+                    <span id="countdown-minutes">02</span>
+                    <span class="countdown-label" data-i18n="countdown_minutes">Minutos</span>
+                </div>
+                <div class="countdown-unit">
+                    <span id="countdown-seconds">25</span>
+                    <span class="countdown-label" data-i18n="countdown_seconds">Segundos</span>
+                </div>
+            </div>
+            <div class="discount-expiry" data-i18n="countdown_description">Oferta válida hasta el 10/07/2025</div>
+        </div>
         <div class="container">
             <div class="hero-content">
                 <h1 data-i18n="hero_title">Conectando agua con quienes más la necesitan</h1>
@@ -51,7 +80,10 @@
                     potable, conectando proveedores con comunidades sin suministro constante, permitiendo monitorear en
                     tiempo real la calidad y cantidad del agua disponible.</p>
                 <div class="cta-buttons">
-                    <a href="#" class="btn btn-primary" data-i18n="hero_cta_download">Descargar App</a>
+                    <a href="https://aquaconecta-app.netlify.app/" class="btn btn-primary"
+                        data-i18n="hero_cta_join">Prueba ya</a>
+                    <a href="https://aquaconecta-app.netlify.app/" class="btn btn-accent"
+                        data-i18n="countdown_cta">¡Aprovechar ahora!</a>
                     <a href="#contact" class="btn btn-secondary" data-i18n="hero_cta_more">Más Información</a>
                 </div>
             </div>
@@ -60,13 +92,16 @@
             </div>
         </div>
         <div class="wave-divider">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" width="100%"
+                height="100">
                 <path fill="#ffffff" fill-opacity="1"
                     d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,213.3C672,224,768,224,864,202.7C960,181,1056,139,1152,128C1248,117,1344,139,1392,149.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
                 </path>
             </svg>
         </div>
     </header>
+
+
 
     <!-- Características Principales -->
     <section id="features" class="features">

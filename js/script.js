@@ -315,3 +315,89 @@ document.addEventListener('DOMContentLoaded', function() {
         updateTexts('en');
     }
 });
+
+
+// JavaScript para la cuenta regresiva en el hero section
+document.addEventListener('DOMContentLoaded', function() {
+    // Inicializar cuenta regresiva
+    initCountdown();
+    
+    // Añadir traducciones para los elementos de descuento
+    addDiscountTranslations();
+});
+
+// Función para inicializar la cuenta regresiva
+function initCountdown() {
+    // Fecha límite: 10 de Julio de 2025 a las 23:59:59
+    const endDate = new Date("2025-07-10T23:59:59").getTime();
+    
+    // Actualizar cada segundo
+    const countdownTimer = setInterval(function() {
+        // Fecha y hora actual
+        const now = new Date().getTime();
+        
+        // Distancia entre ahora y la fecha límite
+        const distance = endDate - now;
+        
+        // Cálculos de tiempo para días, horas, minutos y segundos
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+        // Mostrar resultados añadiendo ceros a la izquierda si es necesario
+        document.getElementById("countdown-days").textContent = days < 10 ? "0" + days : days;
+        document.getElementById("countdown-hours").textContent = hours < 10 ? "0" + hours : hours;
+        document.getElementById("countdown-minutes").textContent = minutes < 10 ? "0" + minutes : minutes;
+        document.getElementById("countdown-seconds").textContent = seconds < 10 ? "0" + seconds : seconds;
+        
+        // Si la cuenta regresiva ha terminado
+        if (distance < 0) {
+            clearInterval(countdownTimer);
+            document.getElementById("countdown-days").textContent = "00";
+            document.getElementById("countdown-hours").textContent = "00";
+            document.getElementById("countdown-minutes").textContent = "00";
+            document.getElementById("countdown-seconds").textContent = "00";
+            
+            // Opcional: ocultar el banner cuando termina la promoción
+            // document.querySelector(".discount-ribbon").style.display = "none";
+        }
+    }, 1000);
+}
+
+// Añadir nuevas traducciones para el banner de descuento
+function addDiscountTranslations() {
+    // Añadir al objeto de traducciones existente
+    // En español
+    translations.es["countdown_title"] = "¡Descuento por lanzamiento oficial!";
+    translations.es["countdown_description"] = "Oferta válida hasta el 10/07/2025";
+    translations.es["countdown_days"] = "Días";
+    translations.es["countdown_hours"] = "Horas";
+    translations.es["countdown_minutes"] = "Minutos";
+    translations.es["countdown_seconds"] = "Segundos";
+    translations.es["countdown_cta"] = "¡Aprovechar ahora!";
+    translations.es["hero_cta_join"] = "Únete a nosotros";
+    
+    // En inglés
+    translations.en["countdown_title"] = "Official Launch Discount!";
+    translations.en["countdown_description"] = "Offer valid until 07/10/2025";
+    translations.en["countdown_days"] = "Days";
+    translations.en["countdown_hours"] = "Hours";
+    translations.en["countdown_minutes"] = "Minutes";
+    translations.en["countdown_seconds"] = "Seconds";
+    translations.en["countdown_cta"] = "Get it now!";
+    translations.en["hero_cta_join"] = "Join us";
+    
+    // Actualizar el idioma actual
+    const currentLang = localStorage.getItem('language') || 'es';
+    updateTexts(currentLang);
+}
+
+// Añade efectos visuales al cargar la página
+window.addEventListener('load', function() {
+    // Añadir clase para activar animación en el banner
+    setTimeout(() => {
+        document.querySelector('.discount-ribbon').classList.add('active');
+        document.querySelector('.discount-tag').classList.add('active');
+    }, 300);
+});

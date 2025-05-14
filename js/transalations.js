@@ -16,7 +16,7 @@ const translations = {
         // Hero Section
         "hero_title": "Conectando agua con quienes más la necesitan",
         "hero_description": "AquaConecta es una plataforma inteligente con tecnología IoT que revoluciona el acceso al agua potable, conectando proveedores con comunidades sin suministro constante, permitiendo monitorear en tiempo real la calidad y cantidad del agua disponible.",
-        "hero_cta_download": "Descargar App",
+        "hero_cta_download": "Prueba ya",
         "hero_cta_more": "Más Información",
 
         // Features Section
