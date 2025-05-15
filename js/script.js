@@ -242,7 +242,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Función para cambiar el idioma
     function switchLanguage() {
         // Si el idioma actual es español, cambiar a inglés y viceversa
-        const currentLang = localStorage.getItem('language') || 'es';
+        const currentLang = localStorage.getItem('language') || 'en'; // CAMBIADO: 'es' por 'en'
         const newLang = currentLang === 'es' ? 'en' : 'es';
         
         // Guardar la preferencia de idioma
@@ -255,8 +255,8 @@ document.addEventListener('DOMContentLoaded', function() {
         updateTexts(newLang);
     }
     
-    // Obtener el idioma guardado o usar español por defecto
-    const currentLang = localStorage.getItem('language') || 'es';
+    // Obtener el idioma guardado o usar inglés por defecto
+    const currentLang = localStorage.getItem('language') || 'en'; // CAMBIADO: 'es' por 'en'
     
     // Actualizar el texto del botón de idioma
     const langSwitch = document.getElementById('langSwitch');
