@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="contact_page_title">AquaConecta - Contacto</title>
+    <link rel="icon" href="images/aquaconecta.png" type="image/png">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/contact-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">Aqua<span>Conecta</span></a></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" data-i18n="nav_home">Inicio</a></li>
+                <li><a href="index.html#features" data-i18n="nav_features">Características</a></li>
+                <li><a href="index.html#help" data-i18n="nav_help">A quienes ayudamos</a></li>
+                <li><a href="index.html#problem" data-i18n="nav_problem">Problemática</a></li>
+                <li><a href="index.html#services" data-i18n="nav_services">Servicios</a></li>
+                <li><a href="contact.html" class="active" data-i18n="nav_contact">Contacto</a></li>
+                <li><a href="index.html#team" data-i18n="nav_team">Equipo</a></li>
+                <li><a href="#" id="langSwitch" class="lang-switch">EN</a></li>
+                <li><a href="https://aquaconecta-app.netlify.app/" class="btn-login" data-i18n="nav_login">Acceder</a>
+                </li>
+            </ul>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero de contacto con mapa -->
+    <header class="contact-hero">
+        <div class="container">
+            <div class="contact-hero-content">
+                <h1 data-i18n="contact_hero_title">Contacta con Nosotros</h1>
+                <p data-i18n="contact_hero_description">Estamos aquí para responder tus preguntas y ayudarte con cualquier consulta sobre AquaConecta</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contacto Principal -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Formulario de contacto -->
+                <div class="contact-form-wrapper">
+                    <div class="form-header">
+                        <div class="form-icon">
+                            <i class="fas fa-paper-plane"></i>
+                        </div>
+                        <h2 data-i18n="contact_form_title">Envíanos un mensaje</h2>
+                        <p data-i18n="contact_form_description">Completa el formulario y nos pondremos en contacto contigo lo antes posible</p>
+                    </div>
+                    
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name" data-i18n="contact_name">Nombre</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-i18n="contact_email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" data-i18n="contact_phone">Teléfono</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" data-i18n="contact_subject">Asunto</label>
+                            <select id="subject" name="subject">
+                                <option value="info" data-i18n="contact_subject_info">Información general</option>
+                                <option value="support" data-i18n="contact_subject_support">Soporte técnico</option>
+                                <option value="partnership" data-i18n="contact_subject_partnership">Colaboración</option>
+                                <option value="other" data-i18n="contact_subject_other">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-i18n="contact_message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group form-checkbox">
+                            <input type="checkbox" id="privacy-policy" name="privacy-policy" required>
+                            <label for="privacy-policy" data-i18n="contact_privacy_policy">Acepto la <a href="#">política de privacidad</a> y el tratamiento de mis datos</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-i18n="contact_send">Enviar mensaje</button>
+                    </form>
+                </div>
+
+                <!-- Información de contacto -->
+                <div class="contact-info-wrapper">
+                    <div class="info-header">
+                        <h2 data-i18n="contact_info_title">Información de contacto</h2>
+                        <p data-i18n="contact_info_description">Puedes contactarnos a través de los siguientes medios o visitarnos en nuestra oficina</p>
+                    </div>
+                    
+                    <div class="info-container">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4 data-i18n="contact_address_title">Dirección</h4>
+                                <p data-i18n="contact_address">Av. Tecnológica 1234, Ciudad Innovación, Lima</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4 data-i18n="contact_phone_title">Teléfono</h4>
+                                <p>+51 123 456 789</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4 data-i18n="contact_email_title">Email</h4>
+                                <p>info@aquaconecta.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4 data-i18n="contact_hours_title">Horario de atención</h4>
+                                <p data-i18n="contact_hours">Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h4 data-i18n="contact_social_title">Síguenos en redes sociales</h4>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Descarga la App -->
+                    <div class="download-contact">
+                        <h4 data-i18n="contact_download_title">Descarga AquaConecta</h4>
+                        <p data-i18n="contact_download_description">Disponible para iOS y Android</p>
+                        <div class="app-buttons">
+                            <a href="#" class="app-btn">
+                                <i class="fab fa-apple"></i>
+                                <span>
+                                    <small data-i18n="download_on">Descarga en</small>
+                                    App Store
+                                </span>
+                            </a>
+                            <a href="#" class="app-btn">
+                                <i class="fab fa-google-play"></i>
+                                <span>
+                                    <small data-i18n="available_on">Disponible en</small>
+                                    Google Play
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preguntas frecuentes -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="faq_title">Preguntas Frecuentes</h2>
+                <p data-i18n="faq_description">Respuestas a las consultas más comunes sobre AquaConecta</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-i18n="faq_q1">¿Cómo funciona AquaConecta?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq_a1">AquaConecta utiliza sensores IoT instalados en tanques de agua para monitorear en tiempo real la cantidad y calidad del agua. La información se transmite a nuestra plataforma, donde los usuarios pueden visualizarla a través de una aplicación móvil o web, recibir alertas cuando el nivel es bajo y solicitar suministro cuando sea necesario.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-i18n="faq_q2">¿Cuánto cuesta instalar AquaConecta?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq_a2">El costo inicial es de S/ 258 por sensor, que incluye el dispositivo, la instalación profesional y un mes de servicio. Después del primer mes, la suscripción tiene un costo de S/ 50 mensuales por cada sensor activo.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-i18n="faq_q3">¿AquaConecta funciona sin internet?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq_a3">Los sensores requieren conectividad para transmitir datos a la plataforma. Sin embargo, pueden almacenar temporalmente la información cuando no hay conexión y sincronizarla una vez que se restablezca internet. La aplicación móvil también permite ver los últimos datos sincronizados cuando estás sin conexión.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-i18n="faq_q4">¿Puedo instalar AquaConecta en cualquier tipo de tanque?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq_a4">Nuestros sensores son compatibles con la mayoría de los tanques de agua residenciales y comerciales, incluyendo tanques de plástico, fibra de vidrio, concreto y metal. Durante la instalación, nuestros técnicos evaluarán la compatibilidad y recomendarán la mejor solución para tu caso específico.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-i18n="faq_q5">¿Qué beneficios tiene AquaConecta para proveedores de agua?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-i18n="faq_a5">Para proveedores, AquaConecta ofrece una plataforma de gestión que permite monitorear remotamente el estado de los tanques de sus clientes, planificar rutas de distribución de manera eficiente, priorizar automáticamente las zonas con mayor necesidad y obtener datos valiosos para optimizar sus operaciones y mejorar el servicio al cliente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Aqua<span>Conecta</span></h2>
+                    <p data-i18n="footer_tagline">Conectando agua con quienes más la necesitan</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3 data-i18n="footer_quick_links">Enlaces rápidos</h3>
+                        <ul>
+                            <li><a href="index.html" data-i18n="nav_home">Inicio</a></li>
+                            <li><a href="index.html#features" data-i18n="nav_features">Características</a></li>
+                            <li><a href="index.html#help" data-i18n="nav_help">A quienes ayudamos</a></li>
+                            <li><a href="index.html#problem" data-i18n="nav_problem">Problemática</a></li>
+                            <li><a href="index.html#services" data-i18n="nav_services">Servicios</a></li>
+                            <li><a href="contact.html" data-i18n="nav_contact">Contacto</a></li>
+                            <li><a href="index.html#team" data-i18n="nav_team">Equipo</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3 data-i18n="footer_resources">Recursos</h3>
+                        <ul>
+                            <li><a href="#" data-i18n="footer_faq">Preguntas frecuentes</a></li>
+                            <li><a href="#" data-i18n="footer_blog">Blog</a></li>
+                            <li><a href="#" data-i18n="footer_tutorials">Tutoriales</a></li>
+                            <li><a href="#" data-i18n="footer_help_center">Centro de ayuda</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3 data-i18n="footer_legal">Legal</h3>
+                        <ul>
+                            <li><a href="#" data-i18n="footer_terms">Términos de servicio</a></li>
+                            <li><a href="#" data-i18n="footer_privacy">Política de privacidad</a></li>
+                            <li><a href="#" data-i18n="footer_cookies">Cookies</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer_copyright">&copy; 2025 AquaConecta. Todos los derechos reservados.</p>
+                <p data-i18n="footer_tagline_extended">Diseñado con <i class="fas fa-heart"></i> para comunidades con acceso limitado al agua</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/transalations.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+
+</html>

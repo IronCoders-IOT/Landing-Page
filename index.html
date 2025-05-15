@@ -23,7 +23,6 @@
 
 
 
-    <!-- Navegación -->
     <nav class="navbar">
         <div class="container">
             <div class="logo">
@@ -35,12 +34,12 @@
                 <li><a href="#help" data-i18n="nav_help">A quienes ayudamos</a></li>
                 <li><a href="#problem" data-i18n="nav_problem">Problemática</a></li>
                 <li><a href="#services" data-i18n="nav_services">Servicios</a></li>
-                <li><a href="#contact" data-i18n="nav_contact">Contacto</a></li>
+                <li><a href="contact.html" data-i18n="nav_contact">Contacto</a></li>
+                <!-- Cambiado de #contact a contact.html -->
                 <li><a href="#team" data-i18n="nav_team">Equipo</a></li>
                 <li><a href="#" id="langSwitch" class="lang-switch">EN</a></li>
                 <li><a href="https://aquaconecta-app.netlify.app/" class="btn-login" data-i18n="nav_login">Acceder</a>
                 </li>
-
             </ul>
             <div class="mobile-menu">
                 <i class="fas fa-bars"></i>
@@ -302,7 +301,7 @@
         </div>
     </section>
 
-        
+
     <!-- Sección del Equipo -->
     <section id="team" class="team">
         <div class="container">
@@ -393,7 +392,8 @@
                                 <span data-i18n="service_benefit3">Acceso desde el celular</span>
                             </div>
                         </div>
-                        <a href="#contact" class="btn btn-primary" data-i18n="service_cta">Solicitar Plan</a>
+                        <a href="contact.html" class="btn btn-primary" data-i18n="service_cta">Solicitar Plan</a>
+                        <!-- Cambiado de #contact a contact.html -->
                     </div>
                 </div>
 
@@ -407,7 +407,7 @@
                         <p data-i18n="service_maintenance_description">Servicio técnico especializado para garantizar el
                             correcto funcionamiento de tus sensores.
                         </p>
-                        <a href="#contact" class="btn btn-secondary" data-i18n="service_consult">Consultar</a>
+                        <a href="contact.html" class="btn btn-secondary" data-i18n="service_consult">Consultar</a>
                     </div>
 
                     <div class="service-card">
@@ -427,7 +427,7 @@
                         <h3 data-i18n="service_advice_title">Asesoría</h3>
                         <p data-i18n="service_advice_description">Aprende a optimizar tu consumo de agua y reducir
                             costos con nuestros especialistas.</p>
-                        <a href="#contact" class="btn btn-secondary" data-i18n="service_schedule">Agendar cita</a>
+                        <a href="contact.html" class="btn btn-secondary" data-i18n="service_schedule">Agendar cita</a>
                     </div>
                 </div>
             </div>
@@ -436,98 +436,10 @@
                 <h3 data-i18n="service_info_title">¿Necesitas más información?</h3>
                 <p data-i18n="service_info_description">Nuestro equipo está listo para ayudarte a elegir el plan que
                     mejor se adapte a tus necesidades.</p>
-                <a href="#contact" class="btn btn-primary" data-i18n="service_contact_us">Contacta con nosotros</a>
+                <a href="contact.html" class="btn btn-primary" data-i18n="service_contact_us">Contacta con nosotros</a>
             </div>
         </div>
     </section>
-
-    <!-- Contacto -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 data-i18n="contact_title">Contacta con nosotros</h2>
-                <p data-i18n="contact_description">¿Tienes preguntas o sugerencias? Estamos aquí para ayudarte</p>
-            </div>
-            <div class="contact-wrapper">
-                <form id="contact-form" class="contact-form">
-                    <div class="form-group">
-                        <label for="name" data-i18n="contact_name">Nombre</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email" data-i18n="contact_email">Correo electrónico</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject" data-i18n="contact_subject">Asunto</label>
-                        <select id="subject" name="subject">
-                            <option value="info" data-i18n="contact_subject_info">Información general</option>
-                            <option value="support" data-i18n="contact_subject_support">Soporte técnico</option>
-                            <option value="partnership" data-i18n="contact_subject_partnership">Colaboración</option>
-                            <option value="other" data-i18n="contact_subject_other">Otro</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="message" data-i18n="contact_message">Mensaje</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary" data-i18n="contact_send">Enviar mensaje</button>
-                </form>
-                <div class="contact-info">
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4 data-i18n="contact_address_title">Dirección</h4>
-                            <p data-i18n="contact_address">Av. Tecnológica 1234, Ciudad Innovación</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4 data-i18n="contact_phone_title">Teléfono</h4>
-                            <p>+52 123 456 7890</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4 data-i18n="contact_email_title">Email</h4>
-                            <p>info@aquaconecta.com</p>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-
-                    <!-- Descarga la App (con diseño mejorado) -->
-                    <div class="download-contact">
-                        <h4 data-i18n="contact_download_title">Descarga AquaConecta</h4>
-                        <p data-i18n="contact_download_description">Disponible para iOS y Android</p>
-                        <div class="app-buttons">
-                            <a href="#" class="app-btn">
-                                <i class="fab fa-apple"></i>
-                                <span>
-                                    <small data-i18n="download_on">Descarga en</small>
-                                    App Store
-                                </span>
-                            </a>
-                            <a href="#" class="app-btn">
-                                <i class="fab fa-google-play"></i>
-                                <span>
-                                    <small data-i18n="available_on">Disponible en</small>
-                                    Google Play
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
 
 
     <!-- Footer -->

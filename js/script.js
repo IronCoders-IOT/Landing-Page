@@ -376,7 +376,7 @@ function addDiscountTranslations() {
     translations.es["countdown_minutes"] = "Minutos";
     translations.es["countdown_seconds"] = "Segundos";
     translations.es["countdown_cta"] = "¡Aprovechar ahora!";
-    translations.es["hero_cta_join"] = "Únete a nosotros";
+    translations.es["hero_cta_join"] = "Prueba ya";
     
     // En inglés
     translations.en["countdown_title"] = "Official Launch Discount!";
