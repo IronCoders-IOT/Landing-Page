@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Primero añadir todas las traducciones adicionales
+    addDiscountTranslations();
+    
     // Navegación móvil
     const mobileMenu = document.querySelector('.mobile-menu');
     const navLinks = document.querySelector('.nav-links');
@@ -252,49 +255,6 @@ document.addEventListener('DOMContentLoaded', function() {
         updateTexts(newLang);
     }
     
-    // Función para actualizar todos los textos según el idioma
-    function updateTexts(lang) {
-        // Obtener todos los elementos con atributo data-i18n
-        const elements = document.querySelectorAll('[data-i18n]');
-        
-        elements.forEach(element => {
-            const key = element.getAttribute('data-i18n');
-            
-            // Si existe una traducción para este elemento
-            if (translations[lang] && translations[lang][key]) {
-                // Si es un elemento de entrada o un textarea
-                if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
-                    if (element.getAttribute('placeholder')) {
-                        element.placeholder = translations[lang][key];
-                    } else {
-                        element.value = translations[lang][key];
-                    }
-                } 
-                // Si es un elemento select option
-                else if (element.tagName === 'OPTION') {
-                    element.text = translations[lang][key];
-                }
-                // Si es un elemento con atributo value (como botones)
-                else if (element.hasAttribute('value')) {
-                    element.value = translations[lang][key];
-                } 
-                // Para todos los demás elementos
-                else {
-                    element.textContent = translations[lang][key];
-                }
-            }
-        });
-        
-        // También actualizar el título de la página
-        if (translations[lang] && translations[lang]['site_title']) {
-            document.title = translations[lang]['site_title'];
-        }
-        
-        // Actualizar el atributo lang del HTML
-        document.documentElement.lang = lang;
-    }
-    
-    // Inicializar el idioma al cargar la página
     // Obtener el idioma guardado o usar español por defecto
     const currentLang = localStorage.getItem('language') || 'es';
     
@@ -310,21 +270,54 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Si el idioma guardado es inglés, actualizar los textos
-    if (currentLang === 'en') {
-        updateTexts('en');
-    }
-});
-
-
-// JavaScript para la cuenta regresiva en el hero section
-document.addEventListener('DOMContentLoaded', function() {
+    // Aplicar inmediatamente el idioma guardado
+    updateTexts(currentLang);
+    
     // Inicializar cuenta regresiva
     initCountdown();
-    
-    // Añadir traducciones para los elementos de descuento
-    addDiscountTranslations();
 });
+
+// Función para actualizar todos los textos según el idioma
+function updateTexts(lang) {
+    // Obtener todos los elementos con atributo data-i18n
+    const elements = document.querySelectorAll('[data-i18n]');
+    
+    elements.forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        
+        // Si existe una traducción para este elemento
+        if (translations[lang] && translations[lang][key]) {
+            // Si es un elemento de entrada o un textarea
+            if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                if (element.getAttribute('placeholder')) {
+                    element.placeholder = translations[lang][key];
+                } else {
+                    element.value = translations[lang][key];
+                }
+            } 
+            // Si es un elemento select option
+            else if (element.tagName === 'OPTION') {
+                element.text = translations[lang][key];
+            }
+            // Si es un elemento con atributo value (como botones)
+            else if (element.hasAttribute('value')) {
+                element.value = translations[lang][key];
+            } 
+            // Para todos los demás elementos
+            else {
+                element.textContent = translations[lang][key];
+            }
+        }
+    });
+    
+    // También actualizar el título de la página
+    if (translations[lang] && translations[lang]['site_title']) {
+        document.title = translations[lang]['site_title'];
+    }
+    
+    // Actualizar el atributo lang del HTML
+    document.documentElement.lang = lang;
+}
 
 // Función para inicializar la cuenta regresiva
 function initCountdown() {
@@ -386,18 +379,21 @@ function addDiscountTranslations() {
     translations.en["countdown_minutes"] = "Minutes";
     translations.en["countdown_seconds"] = "Seconds";
     translations.en["countdown_cta"] = "Get it now!";
-    translations.en["hero_cta_join"] = "Join us";
-    
-    // Actualizar el idioma actual
-    const currentLang = localStorage.getItem('language') || 'es';
-    updateTexts(currentLang);
+    translations.en["hero_cta_join"] = "Try it now";
 }
 
 // Añade efectos visuales al cargar la página
 window.addEventListener('load', function() {
     // Añadir clase para activar animación en el banner
     setTimeout(() => {
-        document.querySelector('.discount-ribbon').classList.add('active');
-        document.querySelector('.discount-tag').classList.add('active');
+        const discountRibbon = document.querySelector('.discount-ribbon');
+        if (discountRibbon) {
+            discountRibbon.classList.add('active');
+        }
+        
+        const discountTag = document.querySelector('.discount-tag');
+        if (discountTag) {
+            discountTag.classList.add('active');
+        }
     }, 300);
 });
