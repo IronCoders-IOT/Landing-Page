@@ -29,7 +29,7 @@
 
 .nav-links {
     display: flex;
-    gap: 25px;
+    gap: 20px;
 }
 
 .nav-links a {
@@ -88,7 +88,7 @@
 /* Hero Section */
 .hero {
     position: relative;
-    padding: 160px 0 120px;
+    padding: 150px 0; /* Aumentar de 160px 0 120px */
     background: linear-gradient(135deg, var(--primary-color) 0%, #3498db 100%);
     color: var(--white);
     overflow: hidden;
@@ -147,6 +147,20 @@
 .hero-image img {
     border-radius: 10px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero animations */
+.hero-content {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.hero-image {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    transition-delay: 0.3s;
 }
 
 /* Hero responsive */
@@ -270,4 +284,22 @@
         text-align: center;
         gap: 10px;
     }
+}
+
+.wave-divider {
+    width: 100%;
+    display: block;
+    margin-top: -10px; /* Ajusta este valor según necesites */
+    position: relative;
+    z-index: 5;
+}
+
+.wave-divider svg {
+    filter: drop-shadow(0px -5px 5px rgba(0, 0, 0, 0.05));
+    vertical-align: bottom;
+}
+
+.hero {
+    overflow: hidden;
+    padding-bottom: 0;
 }

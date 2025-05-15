@@ -21,3 +21,181 @@
     opacity: 1;
     transform: translateY(0);
 }
+
+/* ============================================
+   ANIMATIONS & EFFECTS
+============================================ */
+
+/* Float animation for hero image */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Float animation for app preview */
+@keyframes float2 {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-15px) rotate(2deg);
+    }
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+
+/* Fade in animation for testimonials */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Pulse animation for CTA buttons */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 4px 10px rgba(0, 151, 230, 0.3);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 151, 230, 0.4);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 4px 10px rgba(0, 151, 230, 0.3);
+    }
+}
+
+/* Ripple animation for water icons */
+@keyframes ripple {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 151, 230, 0.3);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(0, 151, 230, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 151, 230, 0);
+    }
+}
+
+/* Slide animation for menu */
+@keyframes slideIn {
+    from {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Scroll animations */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-on-scroll.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Apply animations to elements */
+.hero-image {
+    animation: float 6s ease-in-out infinite;
+}
+
+.service-card.featured:hover .service-icon {
+    animation: ripple 1.2s infinite;
+}
+
+.btn-primary {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.cta-buttons .btn-primary:hover {
+    animation: pulse 2s infinite;
+}
+
+.nav-links li a {
+    position: relative;
+}
+
+.nav-links li a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.nav-links li a:hover:after {
+    width: 100%;
+}
+
+.feature-icon i, .help-icon i, .info-item i {
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover .feature-icon i, 
+.help-card:hover .help-icon i, 
+.info-item:hover i {
+    transform: scale(1.2);
+}
+
+.social-links a i {
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover i {
+    transform: rotate(10deg);
+}
+
+/* Stagger animation for feature cards */
+.features-grid .feature-card:nth-child(1) {
+    transition-delay: 0.1s;
+}
+.features-grid .feature-card:nth-child(2) {
+    transition-delay: 0.2s;
+}
+.features-grid .feature-card:nth-child(3) {
+    transition-delay: 0.3s;
+}
+.features-grid .feature-card:nth-child(4) {
+    transition-delay: 0.4s;
+}
+
+/* Stagger animation for service cards */
+.services-wrapper .service-card {
+    transition-delay: 0.1s;
+}
+.additional-services .service-card:nth-child(1) {
+    transition-delay: 0.2s;
+}
+.additional-services .service-card:nth-child(2) {
+    transition-delay: 0.3s;
+}
+.additional-services .service-card:nth-child(3) {
+    transition-delay: 0.4s;
+}
+
