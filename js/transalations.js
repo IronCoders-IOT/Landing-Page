@@ -1,6 +1,10 @@
 // Diccionario de traducciones
 const translations = {
     es: {
+
+        "about_product_title": "Acerca del producto",
+        "about_product_description": "Mira cómo AquaConecta está transformando el acceso al agua potable.",
+
         // SEO y Título del sitio
         "site_title": "AquaConecta - Conectando proveedores de agua con comunidades",
 
@@ -138,6 +142,10 @@ const translations = {
     },
 
     en: {
+
+        "about_product_title": "About the product",
+        "about_product_description": "See how AquaConecta is transforming access to drinking water.",
+
         // SEO and Site Title
         "site_title": "AquaConecta - Connecting water providers with communities",
 
