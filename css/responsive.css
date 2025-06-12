@@ -1,68 +1,236 @@
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1200px) {
     .container {
-        padding: 0 30px;
+        padding: 0 25px;
+        max-width: 1100px;
+        margin: 0 auto;
     }
     
     /* Optimizar hero para laptops */
     .hero {
-        padding: 100px 0 60px;
+        padding: 90px 0 50px;
     }
     
     .hero-content h1 {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
+        line-height: 1.3;
     }
     
     .hero-content p {
-        font-size: 1rem;
+        font-size: 0.95rem;
+        margin-bottom: 20px;
     }
     
     /* Reducir padding en secciones para laptops */
     .features, .help-section, .problem-solution, 
     .about-product, .team, .services {
-        padding: 50px 0;
+        padding: 40px 0;
     }
     
     .final-cta {
-        padding: 60px 0;
+        padding: 50px 0;
     }
     
     .cta-content h2 {
-        font-size: 2.2rem;
+        font-size: 2rem;
+    }
+    
+    /* Ajustar tamaño de video */
+    .product-video iframe {
+        height: 400px;
     }
 }
 
 /* Laptops medianos (1024px-1200px) */
 @media (max-width: 1024px) and (min-width: 768px) {
     .hero .container {
-        gap: 30px;
+        gap: 20px;
+        align-items: center;
     }
     
     .hero-content {
-        max-width: 500px;
+        max-width: 450px;
     }
     
     .hero-image {
-        margin-left: 30px;
+        margin-left: 20px;
+        max-width: 45%;
     }
     
     .hero-image img {
         max-width: 100%;
         height: auto;
+        border-radius: 8px;
+    }
+    
+    /* Ajustar tamaños de tarjetas y elementos */
+    .feature-card {
+        padding: 25px 20px;
+    }
+    
+    .feature-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.6rem;
+    }
+    
+    .help-icon {
+        padding: 30px;
+        min-width: 130px;
+    }
+    
+    .help-content {
+        padding: 25px;
+    }
+    
+    .help-content h3 {
+        font-size: 1.6rem;
     }
 }
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 992px) {
-    /* Base responsive styles will be added here */
+    /* Ajustes para tablets */
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-content {
+        max-width: 100%;
+    }
+    
+    .hero-image {
+        margin: 30px auto 0;
+        max-width: 70%;
+    }
+    
+    .cta-buttons {
+        justify-content: center;
+    }
+    
+    /* Ajustes para secciones */
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Ajustar cards de help section */
+    .help-card {
+        flex-direction: column;
+    }
+    
+    .help-card.reversed {
+        flex-direction: column;
+    }
+    
+    .help-icon {
+        min-width: 100%;
+        padding: 25px;
+    }
+    
+    /* Ajustar el video */
+    .product-video iframe {
+        height: 350px;
+    }
 }
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 768px) {
-    /* Mobile responsive styles will be added here */
+    /* Mobile responsive styles */
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .section-header p {
+        font-size: 0.9rem;
+    }
+    
+    /* Hero ajustes */
+    .hero {
+        padding: 90px 0 40px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-image {
+        max-width: 85%;
+    }
+    
+    /* Features grid ajustes */
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Discount ribbon ajustes */
+    .discount-ribbon {
+        padding: 15px;
+        flex-direction: column;
+    }
+    
+    .countdown-container {
+        margin-top: 10px;
+    }
+    
+    .countdown-unit {
+        padding: 5px;
+    }
+    
+    /* Ajuste de video */
+    .product-video iframe {
+        height: 300px;
+    }
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 576px) {
-    /* Extra small device styles will be added here */
+    /* Extra small device styles */
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero {
+        padding: 80px 0 30px;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .cta-buttons .btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* Tamaño de video */
+    .product-video iframe {
+        height: 200px;
+    }
+    
+    /* Tarjetas de ayuda */
+    .help-content {
+        padding: 20px 15px;
+    }
+    
+    .help-content h3 {
+        font-size: 1.4rem;
+    }
+    
+    /* Countdown más pequeño */
+    #countdown-days,
+    #countdown-hours,
+    #countdown-minutes,
+    #countdown-seconds {
+        font-size: 1.2rem;
+    }
 }

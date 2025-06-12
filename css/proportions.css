@@ -1,0 +1,85 @@
+/* 
+   Archivo de proporciones optimizadas para todos los dispositivos
+   Este archivo asegura que los elementos mantengan proporciones adecuadas
+   en diferentes dispositivos y resoluciones
+*/
+
+/* Proporciones generales */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Proporciones para secciones */
+section {
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Hero section proporciones */
+.hero .container {
+    min-height: unset;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 50%;
+    padding-right: 15px;
+}
+
+.hero-image {
+    max-width: 45%; 
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Ajustes para el ribbon de descuento */
+.discount-ribbon {
+    max-width: 100%;
+    overflow: hidden;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+/* Ajustes para tarjetas de características */
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 260px;
+}
+
+/* Ajustes para tarjetas de ayuda */
+.help-card {
+    max-width: 100%;
+}
+
+.help-content {
+    overflow: auto;
+}
+
+/* Proporciones para vistas en dispositivos pequeños */
+@media (max-width: 992px) {
+    .hero-content, .hero-image {
+        max-width: 100%;
+    }
+    
+    .feature-card {
+        min-height: auto;
+    }
+    
+    /* Wave divider proporción */
+    .wave-divider {
+        height: 50px;
+    }
+    
+    .wave-divider svg {
+        height: 50px;
+    }
+}

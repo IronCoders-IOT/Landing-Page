@@ -1,9 +1,9 @@
 /* Features Section */
 .features {
-    padding: 60px 0; /* Reducido de 80px 0 */
+    padding: 40px 0; /* Reducido de 60px 0 */
     background-color: var(--white);
     position: relative;
-    scroll-margin-top: 80px;
+    scroll-margin-top: 70px;
 }
 
 .features-grid {
@@ -52,10 +52,10 @@
 
 /* Help Section */
 .help-section {
-    padding: 60px 0; /* Reducido de 80px 0 */
+    padding: 40px 0; /* Reducido de 60px 0 */
     background-color: var(--light-bg);
     position: relative;
-    scroll-margin-top: 80px;
+    scroll-margin-top: 70px;
 }
 
 .help-card {

@@ -88,7 +88,7 @@
 /* Hero Section */
 .hero {
     position: relative;
-    padding: 120px 0 80px; /* Reducido de 150px 0 */
+    padding: 100px 0 60px; /* Reducido aún más para laptops */
     background: linear-gradient(135deg, var(--primary-color) 0%, #3498db 100%);
     color: var(--white);
     overflow: hidden;
