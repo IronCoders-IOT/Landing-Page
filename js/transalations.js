@@ -6,9 +6,7 @@ const translations = {
         "about_product_description": "Mira cómo AquaConecta está transformando el acceso al agua potable.",
 
         // SEO y Título del sitio
-        "site_title": "AquaConecta - Conectando proveedores de agua con comunidades",
-
-        // Navegación
+        "site_title": "AquaConecta - Conectando proveedores de agua con comunidades",        // Navegación
         "nav_home": "Inicio",
         "nav_features": "Características",
         "nav_help": "A quienes ayudamos",
@@ -16,6 +14,7 @@ const translations = {
         "nav_services": "Servicios",
         "nav_contact": "Contacto",
         "nav_team": "Equipo",
+        "nav_login": "Acceder",
 
         // Hero Section
         "hero_title": "Conectando agua con quienes más la necesitan",
@@ -131,13 +130,17 @@ const translations = {
         "footer_privacy": "Política de privacidad",
         "footer_cookies": "Cookies",
         "footer_copyright": "© 2025 AquaConecta. Todos los derechos reservados.",
-        "footer_tagline_extended": "Diseñado con ♥ para comunidades con acceso limitado al agua",
-
-        // Team Section
+        "footer_tagline_extended": "Diseñado con ♥ para comunidades con acceso limitado al agua",        // Team Section
         "team_title": "Nuestro Equipo",
         "team_description": "Conozca al equipo de ingenieros de software detrás de AquaConecta",
         "team_about_us": "Sobre Nosotros",
         "team_intro": "Somos un equipo de ingenieros de software comprometidos con la innovación y el desarrollo de soluciones tecnológicas que mejoren el acceso al agua potable.",
+
+        // Final Call to Action
+        "cta_final_title": "¿Listo para transformar el acceso al agua?",
+        "cta_final_description": "Únete a miles de familias que ya están mejorando su calidad de vida con AquaConecta. No esperes más para tener control total sobre tu suministro de agua.",
+        "cta_final_button_primary": "Comenzar ahora",
+        "cta_final_button_secondary": "Hablar con un experto",
 
     },
 
@@ -147,9 +150,7 @@ const translations = {
         "about_product_description": "See how AquaConecta is transforming access to drinking water.",
 
         // SEO and Site Title
-        "site_title": "AquaConecta - Connecting water providers with communities",
-
-        // Navigation
+        "site_title": "AquaConecta - Connecting water providers with communities",        // Navigation
         "nav_home": "Home",
         "nav_features": "Features",
         "nav_help": "Who We Help",
@@ -157,6 +158,7 @@ const translations = {
         "nav_services": "Services",
         "nav_contact": "Contact",
         "nav_team": "Team",
+        "nav_login": "Access",
 
         // Hero Section
         "hero_title": "Connecting water with those who need it most",
@@ -272,13 +274,17 @@ const translations = {
         "footer_privacy": "Privacy policy",
         "footer_cookies": "Cookies",
         "footer_copyright": "© 2025 AquaConecta. All rights reserved.",
-        "footer_tagline_extended": "Designed with ♥ for communities with limited access to water",
-
-        // Para inglés (dentro del objeto 'en')
+        "footer_tagline_extended": "Designed with ♥ for communities with limited access to water",        // Para inglés (dentro del objeto 'en')
         "team_title": "Our Team",
         "team_description": "Meet the software engineering team behind AquaConecta",
         "team_about_us": "About Us",
         "team_intro": "We are a team of software engineers committed to innovation and the development of technological solutions that improve access to drinking water.",
+
+        // Final Call to Action
+        "cta_final_title": "Ready to transform water access?",
+        "cta_final_description": "Join thousands of families who are already improving their quality of life with AquaConecta. Don't wait any longer to have total control over your water supply.",
+        "cta_final_button_primary": "Start now",
+        "cta_final_button_secondary": "Talk to an expert",
     }
 
 
